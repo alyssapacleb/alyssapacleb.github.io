@@ -1,0 +1,133 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(reg.woff);
+}
+
+
+HTML {
+    display:block;
+    font-family:myFirstFont;
+    width:100%;
+    cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif),auto;
+}
+
+
+a {
+    border: 0px none;
+    font-family:myFirstFont;
+    color:dimgray;
+    font-size: 20px;
+}
+
+
+a:link {
+    text-decoration: none;
+    cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat976.gif),auto;
+}
+
+a:visited {
+    color:dimgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+a:active {
+    color:dimgray;
+    text-decoration: underline;
+}
+table {
+    font-family:myFirstFont;
+    padding-top: 15px;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid dimgray;
+}
+.bod {
+    font-size:10pt;
+    text-align:left;
+    font-family:myFirstFont;
+    border:0px none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sub {
+    font-size:20pt;
+    text-align:left;
+    font-family: myFirstFont;
+    font-weight: bold;
+    color: #C7BFE6;
+    padding-left: 40px;
+    padding-bottom:20px;
+    padding-top: 15px;
+}
+.maintab {
+    border: 0px none;
+}
+
+.header {
+    display:flex;
+    direction: ltr;
+    width:100%;
+    align-items:center;
+    justify-content: flex-end;
+    text-align:center;
+    padding-right:5px;
+    height:50px;
+    padding-bottom:10px;
+}
+
+.button {
+    font-family:myFirstFont;
+    width:100px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align:center;
+    background-color: white;
+    color:dimgray;
+    cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat976.gif),auto;
+}
+.TITLE {
+    font-family: myFirstFont;
+    display:block;
+    width:100%;
+    margin-top:auto;
+    padding-bottom:10px;
+    margin-left: auto;
+    margin-right:auto;
+    background-color:#C7BFE6;
+    color:white;
+    font-size: 175px;
+    height:250px;
+    /*padding-left:0px;*/
+    margin-bottom:0px;
+    text-align:center;
+}
+
+.border{
+
+    width:300px;
+    margin: auto;
+    margin-top:50px;
+    border-radius: 20px;
+    /*border:5px solid dimgray;*/
+    justify-content: center;
+
+}
+
+.pic {
+
+    border-radius: 20px;
+    height: 300px;
+    width:300px;
+}
+
+.cap {
+    font-size:20px;
+    text-align:center;
+}
+

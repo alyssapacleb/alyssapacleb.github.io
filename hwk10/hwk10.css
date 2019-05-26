@@ -1,0 +1,58 @@
+html {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 {
+    position:absolute;
+    left:50px;
+    font-size: 20pt
+}
+h2 {
+    position:absolute;
+    font-size: 15pt;
+    top: 100px;
+    left:50px;
+}
+
+ol {
+    position:absolute;
+    top:150px;
+    left:50px;
+    font-size: 12pt;
+}
+
+#timer {
+    position:absolute;
+    left: 850px;
+    top:225px;
+}
+
+.results {
+    position:absolute;
+    left: 850px;
+    top:325px;
+}
+
+.button {
+    width: 125px;
+    font-size: 12pt;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #d2d2d2;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.buttonarea {
+    position:absolute;
+    left:70px;
+    top:325px;
+}
+
+.completed {
+    position: absolute;
+    padding:10px;
+    font-weight:bold;
+    left:840px;
+    top:100px;
+    font-size:15pt;
+}
+

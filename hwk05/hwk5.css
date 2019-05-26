@@ -1,0 +1,151 @@
+/*
+
+CSS file for hwk5.html
+
+
+
+*/
+
+a {
+	color:#000000;
+}
+a:hover {
+	color:#7f7f7f;
+}
+
+.head {
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 50px;
+	padding-top: 30px;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	padding-bottom: 10px;
+
+
+
+}
+
+.foot {
+	position:absolute;
+	bottom:-150px;
+	text-align:right;
+	right:20px;
+	width:1100px;
+	padding-bottom:20px;
+	border-top-style:solid;
+	border-top-width:thin;
+}
+
+.right {
+	font-size:12px;
+	position:absolute;
+	/*background-color:green;*/
+	text-align: center;
+	width: 250px;
+	right: 0px;
+	height: 660px;
+	border-left-style:solid;
+	border-left-width:thin;
+	top:120px;
+	
+}
+
+.right img {
+	width:150px;
+	height:150px;
+
+
+}
+
+.left {
+	font-variant:small-caps;
+	position:absolute;
+	margin-left: 10px;
+	margin-right:100px;
+	top:120px;
+	/*background-color:red;*/
+	left: 0px;
+	width: 140px;
+	min-height:300px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left:20px;
+	height: 620px;
+	border-right-style:solid;
+	border-right-width:thin;
+}
+
+.within {
+	/*background-color:red;*/
+	height:300px;
+	top:0px;
+	position:absolute;
+	width:180px;
+	margin-left:10px;
+	text-align:left;
+
+}
+
+.center {
+	position:absolute;
+	/*background-color:blue;*/
+	font-size:10.5px;
+	left:200px;
+	width:665px;
+	height:300px;
+	border-bottom-style:solid;
+        border-bottom-width:thin;
+}
+
+.clearfix {
+	overflow:auto;
+}
+
+
+.center img{
+	position: absolute;
+	float: right;
+	margin-left: 200px;
+	top: 0px;
+	
+	width: 450px;
+	height: 275px;
+	padding:10px;
+
+}
+
+.center h2 {
+	font-variant:small-caps;
+
+}
+
+
+.bottom {
+	position:absolute;
+	top:440px;
+	height:310px;
+	width:665px;
+	left:225px;
+}
+table {
+	width:667px;
+       	height:300px;
+
+}
+
+th {
+	font-variant:small-caps;
+	text-align: left;
+	vertical-align:top;
+}
+
+td {
+	text-align: justify;
+        vertical-align:top;
+	font-size:11px;
+
+}
+

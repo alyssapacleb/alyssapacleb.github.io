@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel = "stylesheet" type = "text/css" href ="hwk6.css" media = "all" >
+    <meta charset="UTF-8">
+    <title>Alyssa June Pacleb</title>
+</head>
+
+<body>
+
+
+<h1>Mortgage Calculator</h1>
+
+<form id = "mortgage" action method = "post">
+    <table>
+
+        <!--PRINCIPAL AMOUNT-->
+        <tr>
+            <td class = "b">Principal amount:</td>
+            <td>
+                <input type = "text" name = "PA" placeholder = "Enter principal amount" required size = 50>
+            </td>
+        </tr>
+
+        <!--YEARLY PERCENTAGE INTEREST RATE-->
+        <tr>
+            <td class = "b">Yearly percentage interest rate:</td>
+            <td>
+                <input type = "text" name = "YPIR" placeholder = "Enter yearly percentage interest rate" required size = 50>
+            </td>
+        </tr>
+
+        <!--LOAN TERM IN MONTHS-->
+        <tr>
+            <td class = "b">Loan term in months:</td>
+            <td>
+                <input type = "text" name = "LT" placeholder = "Enter loan term in months" required size = 50>
+            </td>
+        </tr>
+
+        <!--BUTTONS-->
+        <tr>
+            <td>
+                <input type ="button" name="calc" value = "Submit">
+                <input type = "reset" value = "Reset">
+            </td>
+            <td></td>
+        </tr>
+
+        <!--MONTHLY PAYMENT-->
+        <tr>
+            <td class = "b">The monthly payment is</td>
+            <td><input type = "text" name = "monpay" size = 50></td>
+        </tr>
+
+        <!--SUM OF ALL PAYMENTS-->
+        <tr>
+            <td class = "b">The sum of all payments</td>
+            <td>
+                <input type = "text" name = "sumpay" size = 50>
+            </td>
+        </tr>
+
+        <!--TOTAL INTEREST PAID-->
+        <tr>
+            <td class = "b">Total interest paid</td>
+            <td>
+                <input type = "text" name = "interestpay" size = 50>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script type = "text/javascript">
+
+    document.getElementById("mortgage").calc.onclick = monthlyPayment;
+
+    function monthlyPayment()
+    {
+        var capR = "";
+        var monthlypay = document.getElementById("mortgage");
+
+        //validate if numbers
+        if (isNaN(monthlypay.PA.value) || monthlypay.PA.value < 0 || monthlypay.PA.value == null || monthlypay.PA.value == "") {
+            window.alert("Principal amount must be a positive number");
+            var allgoodPA = false;
+        }
+        else {
+            var PA = parseFloat(monthlypay.PA.value);
+            var allgoodPA = true;
+        }
+
+        if (isNaN(monthlypay.YPIR.value) || monthlypay.YPIR.value <0 || monthlypay.YPIR.value ==null || monthlypay.YPIR.value == "") {
+            window.alert("Yearly percentage interest rate must be a positive number");
+            var allgoodYPIR = false;
+        }
+        else {
+            var YPIR = parseFloat(monthlypay.YPIR.value);
+            var r = YPIR/12/100;
+            var allgoodYPIR = true;
+        }
+
+        if (isNaN(monthlypay.LT.value) || monthlypay.LT.value <0 || monthlypay.LT.value ==null || monthlypay.LT.value == "") {
+            window.alert("Loan term must be a positive number");
+            var allgoodLT = false;
+
+        }
+        else{
+            var LT = Math.round(parseFloat(monthlypay.LT.value));
+            var allgoodLT = true;
+        }
+
+        var num = PA*r;
+        var den = 1-(1/Math.pow((1+r),LT));
+        // monthly payment
+        capR = num/den;
+        monthlypay.monpay.value = capR.toFixed(2);
+
+        //sum of all payments
+        var SOAP = capR*LT;
+        monthlypay.sumpay.value = SOAP.toFixed(2);
+
+        //total interest paid
+        var TIP = SOAP - PA;
+        monthlypay.interestpay.value = TIP.toFixed(2);
+
+        if (allgoodPA == false || allgoodYPIR == false || allgoodLT == false){
+            monthlypay.monpay.value = "";
+            monthlypay.sumpay.value = "";
+            monthlypay.interestpay.value = "";
+        }
+
+    }
+
+
+</script>
+
+
+</body>
+</html>

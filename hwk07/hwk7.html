@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Form Validation </title>
+    <link rel = "stylesheet" type = "text/css" href ="hwk7.css" media = "all" >
+    <meta charset="UTF-8">
+    <script type ="text/javascript" src = "./hwk7.js"></script>
+</head>
+
+<body>
+<br><br><br>
+<form id = "textForm" method = "post"
+      action = "http://www.cknuckles.com/cgi/echo.cgi"
+      onsubmit = "return validate();" >
+    <table class = "tab">
+        <tr>
+            <td class = "title">Sign Up</td>
+        </tr>
+        <tr>
+            <td> <input type = "text" name = "userName" placeholder="Username" /></td>
+        </tr>
+        <tr>
+            <td> <input type = "password" name = "password" placeholder="Password"/></td>
+        </tr>
+        <tr>
+            <td> <input type = "password" name = "repeatPassword" placeholder="Repeat Password"/></td>
+        </tr>
+        <tr>
+            <td class = "small">Username and Password must be 6-10 characters long and contain only letters and digits<br>
+                Password must include a capital letter, a lowercase letter, and a number</td>
+        </tr>
+        <tr class = buttonarea>
+            <td> <input class="button" type = "submit" value = "Enter" />
+            <input class="button" type = "reset" value = "Clear" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="hwk10.css" media="all">
+    <title> Alyssa June Pacleb </title>
+    <script type="text/javascript" src="./hwk10.js"></script>
+</head>
+
+<body style="font-size: 20pt;" onload="randomSetGenerator();">
+<h1>Jig-Saw Puzzle</h1>
+<h2>How to play:</h2>
+<ol>
+    <li> Click "Start" to begin playing.<br><br></li>
+    <li> Place all pieces in their appropriate <br>spots on the grid.<br><br></li>
+    <li> When you think you're done, click "Done"</li>
+</ol>
+
+<div id="timer">00:00:00</div>
+<div class="results" id="results"> </div>
+<div class = "buttonarea"><input type = "button" onclick="startTimer();" value = "Start" class = "button">  <input type = "button" onclick="stopAndCheck();" value = "Done" class = "button"> </div>
+<div class="completed" id="completed"></div>
+
+<span style="position: absolute; top: 100px; left: 400px;">
+        <img src="puzzleback.gif" alt="puzzleback.gif"> </span>
+
+<span style="position: absolute; top: 420px; left: 825px;" id="1" onmousedown="grabber(event);"><img src="images2/1.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 420px; left: 275px;" id="2" onmousedown="grabber(event);"><img src="images2/2.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 275px;" id="3" onmousedown="grabber(event);"><img src="images2/3.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 715px;" id="4" onmousedown="grabber(event);"><img src="images2/4.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 605px;" id="5" onmousedown="grabber(event);"><img src="images2/5.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 420px; left: 715px;" id="6" onmousedown="grabber(event);"><img src="images2/6.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 420px; left: 385px;" id="7" onmousedown="grabber(event);"><img src="images2/7.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 385px;" id="8" onmousedown="grabber(event);"><img src="images2/8.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 825px;" id="9" onmousedown="grabber(event);"><img src="images2/9.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 530px; left: 495px;" id="10" onmousedown="grabber(event);"><img src="images2/10.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 420px; left: 605px;" id="11" onmousedown="grabber(event);"><img src="images2/11.jpg" alt="jigsaw piece"></span>
+
+<span style="position: absolute; top: 420px; left: 495px;" id="12" onmousedown="grabber(event);"><img src="images2/12.jpg" alt="jigsaw piece"></span>
+
+</body>
+</html>

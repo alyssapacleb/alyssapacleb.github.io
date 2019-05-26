@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href ="./proj.css" media = "all" >
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta charset="UTF-8">
+    <title>Good Bois</title>
+</head>
+
+<body onload="slide()">
+
+<div class = "header">
+
+    <input class = "button" type = button onclick= "window.location.href = 'login.html';" value = login>
+    &nbsp;
+    <input class = "button" type = "button" onclick = "window.location.href = 'signup.html';" value = "signup">
+    &nbsp;
+    <a href="./proj.html"> <img src="circ2.jpg" alt="whitebackground logo" height = 50px/> </a>
+
+</div>
+
+<p class = "TITLE">good bois   <a href="./proj.html"> <img src = "circ1.jpg" alt = "Purple Background logo"> </a> </p>
+
+<table>
+    <tr>
+        <td><a href = "about.html">ABOUT</a></td>
+        <td><a href = "social.html">SOCIAL</a></td>
+        <td><a href = "adopt.html">ADOPT</a></td>
+        <td><a href = "contact.html">CONTACT US</a></td>
+    </tr>
+</table>
+
+
+<table class = "maintab">
+    <tr>
+        <td class = "sub">social</td>
+        <td class = "sub">adopt</td>
+    </tr>
+    <tr>
+        <td class = "bod">
+           Already have your best friend?<br>Connect with other dog owners and show off your good boy using Good Bois <em>social</em>!
+        </td>
+        <td class = "bod">Looking for a furry friend?<br>Enter your pet and living preferences to be matched with your perfect pup with Good Bois<em> adopt</em>!
+        </td>
+
+    </tr>
+        
+</table>
+
+<div id = "border" class = "border">
+    <p class = "cap">Our Best Bois</p>
+    <img id = "pic" class = "pic" alt = "Picture" src = "./img01.JPG">
+    <p id = "cap" class = "cap">
+</div>
+
+<p align=right><br><br><br>
+Signed: Alyssa June Pacleb, Daniel Sanchez Date:
+<script>document.write(new Date().toLocalDateString());</script>
+3/12/2019</p>
+    
+    <script type = "text/javascript">
+	<!--
+		var idx = 0;
+		var imgs = ["img01.JPG","img02.JPG","img03.JPG","img04.JPG","img05.jpg","img06.jpg"];
+		var captions = ["Leo","Marley","Xasha","Waffle", "Snowy", "Fudge"];
+		
+	
+
+		function slide(){
+			if (idx > 5){
+				idx = 0;
+			}
+			
+			document.getElementById("pic").src = imgs[idx];
+			document.getElementById("cap").innerHTML = captions[idx];
+			
+
+			idx = idx + 1;
+
+		}
+		
+		setInterval(slide, 5000);
+	// -->
+	</script>	
+</body>
+</html>
+

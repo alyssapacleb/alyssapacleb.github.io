@@ -1,0 +1,108 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(reg.woff);
+}
+
+html {
+    color: dimgray;
+    font-family:myFirstFont;
+    background-color: #C7BFE6;
+}
+
+input {
+    width: 425px;
+    background-color: whitesmoke;
+    height:25px;
+    font-size:14pt;
+    border: 0 none;
+    border-bottom: 1px solid darkgray;
+}
+input:focus {
+    outline:none;
+}
+
+.tab {
+    border-radius:20px;
+    margin: auto;
+    background-color: whitesmoke;
+    width: 40%;
+    padding-top: 50px;
+    /*padding-left: 100px;
+    display: block;*/
+}
+td {
+    text-align: center;
+    padding-bottom:25px;
+}
+
+.title {
+    font-size:18pt;
+    padding-bottom:30px;
+    text-align: center;
+    font-weight: bold;
+}
+.small{
+    font-size: 8pt;
+}
+
+.buttonarea {
+    text-align: center;
+}
+
+.button {
+    width:125px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align: center;
+    background-color: #C7BFE6;
+    font-family: myFirstFont;
+}
+
+input::placeholder {
+    color: darkgrey;
+    font-family: myFirstFont;;
+}
+
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: myFirstFont;
+}
+
+.mainLoginInput:-ms-input-placeholder {
+    font-family: myFirstFont;
+}
+
+.mainLoginInput:-moz-placeholder {
+    font-family: myFirstFont;
+}
+
+.mainLoginInput::-moz-placeholder {
+    font-family: myFirstFont;
+}
+
+a {
+    border: 0px none;
+    font-family:myFirstFont;
+    color:dimgray;
+    font-size: 15px;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color:dimgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+a:active {
+    color:dimgray;
+    text-decoration: underline;
+}
+

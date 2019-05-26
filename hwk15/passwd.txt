@@ -1,0 +1,6 @@
+q:q
+pascal:blaise
+babbage:charles
+hollerith:herman
+zuse:konrad
+aiken:howard

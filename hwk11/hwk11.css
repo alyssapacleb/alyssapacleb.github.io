@@ -1,0 +1,86 @@
+html {
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    background-color: darkgrey;
+}
+
+input {
+    width: 20px;
+    background-color: whitesmoke;
+    font-size:14pt;
+    border: 0 none;
+    border-bottom: 1px solid darkgray;
+}
+input:focus {
+    outline:none;
+}
+.box {
+    width:100px;
+}
+
+.tab {
+    border-radius:20px;
+    margin: auto;
+    background-color: whitesmoke;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info {
+    padding-left:30px;
+}
+
+.button {
+    width:125px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align: center;
+    background-color: darkgrey;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 12px;
+    margin:auto;
+}
+.buttonarea {
+    text-align: center;
+    padding: 10px;
+}
+
+
+td {
+    text-align: center;
+    padding-bottom:25px;
+}
+
+.title {
+    font-size:18pt;
+    padding-bottom:30px;
+    text-align: center;
+    font-weight: bold;
+}
+.small{
+    font-size: 8pt;
+}
+
+
+
+
+input::placeholder {
+    color: darkgrey;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: 'myFont', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mainLoginInput:-ms-input-placeholder {
+    font-family: 'myFont', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mainLoginInput:-moz-placeholder {
+    font-family: 'myFont', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mainLoginInput::-moz-placeholder {
+    font-family: 'myFont', "Trebuchet MS", Helvetica, sans-serif;
+}

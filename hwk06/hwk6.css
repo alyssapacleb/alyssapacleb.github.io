@@ -1,0 +1,31 @@
+html {
+    font-family: "Charis", "GT Sectra", serif;
+    background-color: #F9F9F9;
+}
+
+h1 {
+    margin-left: 10px;
+    font-variant:small-caps;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+.b{
+    font-weight:bold;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
