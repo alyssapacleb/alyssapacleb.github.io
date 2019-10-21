@@ -1,0 +1,44 @@
+html {
+        font-family: "Times New Roman", Times, serif;
+}
+
+img {
+        border-radius: 50%;
+        float:left;
+        padding:20px;
+        margin-left: 30px;
+}
+
+
+.top {
+        padding: 20px;
+        font-variant: small-caps;
+        margin-left:30px;
+}
+
+h2 {
+        /*padding: 20px;*/
+        margin-left: 80px;
+        font-variant:small-caps;
+        /*border-bottom: 3px solid;*/
+}
+
+p {
+        padding-top: 10px;
+        text-align:left;
+        margin-left: 100px;
+        margin-right: 100px;
+
+}
+
+.Border {
+        border-bottom: 3px solid;
+        position: absolute;
+        left: 70px;
+        right: 100px;
+}
+
+ul {
+        margin-left: 80px;
+        margin-right: 400px;
+}
