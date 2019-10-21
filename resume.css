@@ -59,3 +59,15 @@ ul {
 li {
     padding-bottom:10px;
 }
+
+.in {
+    margin-right: 90px;
+}
+
+.date {
+    text-align: right;
+    float: right;
+    display: inline-flex;
+
+
+}
