@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" type = "text/css" href ="./proj.css" media = "all" >
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta charset="UTF-8">
+    <title>Good Bois</title>
+</head>
+
+<body onload="slide()">
+
+<p class = "TITLE">Alyssa June Pacleb: Projects </p>
+
+<table>
+    <tr>
+        <td><a href = "index.html">ABOUT ME</a></td>
+        <td><a href = "resume.html">RESUME</a></td>
+        <td class = "current"><a href = "project.html">PROJECTS</a></td>
+        <td><a href = "contact.html">CONTACT ME</a></td>
+
+    </tr>
+</table>
+
+<br>
+
+<table class = "pparea2">
+
+    <tr>
+        <td>
+            <div id="slideshow4" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="data/data1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="data/data2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="data/data3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="data/data4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="data/data5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="data/data6.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow4)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow4)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow4)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow4)"></span>
+                    <span class="dot" onclick="currentSlide(5, slideshow4)"></span>
+                    <span class="dot" onclick="currentSlide(6, slideshow4)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            The History of Baseball (SQL, python) <br>Fall 2019
+            <br> <p class = "plain">
+            I found two databases with common features. The first dataset contains information about Major League Baseball (MLB) in the United States.
+            The second dataset contains information about Nippion Professional Baseball (NPB) in Japan.
+            Each file in each dataset had at least 5,000 oberservations and at least 5 features.
+            <br><br>The datasets were modeled using BigQuery to at least 2nd normal form. Inconsistent naming conventions in the datasets were fixed using Apache Beam and Dataflow.
+            These fixes to the datasets were also demonstrated in Apache airflow. Graphs were made in Google Data Studio to visualize the data
+            as well as differences between baseball in the United States compared to baseball in Japan.
+            <br><br> <a href = 'https://github.com/alyssapacleb/Databases_baseball.git'>Databases GitHub Repository</a>
+        </p>
+        </td>
+    </tr> <!-- DATABASES -->
+
+    <tr>
+        <td>
+            <div id="slideshow5" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="bb/bb1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="bb/bb2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="bb/bb3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="bb/bb4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="bb/bb5.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow5)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow5)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow5)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow5)"></span>
+                    <span class="dot" onclick="currentSlide(5, slideshow5)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            The History of Home Runs (R) <br>Fall 2019
+            <br> <p class = "plain">
+            Controlling for salary, does the linear trend predicting number of home runs hit every year change through time?
+            Additionally, does batting hand significantly moderate the effect of year on home runs and/or does league moderate the effect of year on home runs?
+            <br><br>
+            To answer this question, I used segmented regression (piecewise regression) with interactions.
+            I used data from a baseball database compiled by author and journalist, Sean Lahman. This database contains baseball statistics from 1871 - 2018.
+            <br><br><a href = 'https://github.com/alyssapacleb/Segmented_Regression_Baseball.git'>Segmented Regression GitHub Repository</a>
+        </p>
+        </td>
+    </tr> <!-- HOME RUNS -->
+
+    <tr>
+        <td>
+            <div id="slideshow6" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="gb/gb2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="gb/gb3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="gb/gb4.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow6)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow6)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow6)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            Good Bois Website (HTML, CSS, PHP, JavaScript) <br>Spring 2019
+            <br> <p class = "plain">
+            Every animal deserves a home and family that cares for it. "Good Bois Social" is a way to show off your pet to others and view other pet owner's animals.
+            Posting and viewing Good Bois Social is only accessible to members who make accounts on the website.
+            "Good Bois Adopt" allows you to enter in your zip code and find animals at animal shelters in your area.
+            <br><br>This webiste features dynamic HTML, a MySQL database, PHP interface to database, sessions, cookies, an ajax application, and safe web programming practices.
+            <br><br><a href = 'https://github.com/alyssapacleb/goodbois.git'>Good Bois Website Repository</a>
+            <br><br><a href = 'https://spring-2019.cs.utexas.edu/cs329e-mitra/apacleb/final/proj.php'>Link to website</a>
+        </p>
+        </td>
+    </tr> <!-- GOOD BOIS.COM -->
+
+    <tr>
+        <td>
+            <div id="slideshow3" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="app/app1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="app/app2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="app/app3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="app/app4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="app/app5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="app/app6.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow3)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow3)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow3)"></span>
+                    <span class="dot" onclick="currentSlide(5, slideshow3)"></span>
+                    <span class="dot" onclick="currentSlide(6, slideshow3)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            Good Bois iOS App (Swift) <br>Spring 2019
+            <br> <p class = "plain">
+            This app features core graphics, core data storage, core location, gestures, and networking functionality.
+            Similar to the website, the user is able to find dogs in animal shelters based on location and other preferences.
+            The user is able to swipe right and left on dogs they like or dislike and save the pets to view later.
+            <br><br>The API used was through <a href = 'https://www.petfinder.com/'>PetFinder</a>. The API used OAuth for authorization and authentication.
+            <br><br><a href = 'https://github.com/alyssapacleb/TheGoodBois.git'>Good Bois App Repository</a>
+
+
+        </p>
+        </td>
+    </tr> <!-- IOS APP -->
+
+    <tr>
+        <td>
+            <div id="slideshow1" class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="platform.png" style="width:100%">
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                </div>
+            </div>
+            <br>
+        </td>
+        <td class = "sub">
+            Platform Game (Python) <br>Fall 2018
+            <br> <p class = "plain">
+            This project uses unit testing, acceptance testing, refactoring, and other elements of Xtreme Programming.
+            <br><br>
+            This project is a 2D side-scrolling game. The game utilizes file manipulation by saving a text file with player information such as
+            the user’s lives remaining, current level, and score. The game updates this text file as the user progresses in the game.
+            When the user continues the game, the program loads the text file. The user is able to shoot enemies and interact with
+            objects while exploring their surrounding.
+            <br><br><a href = 'https://github.com/greyhatchet/7P1A-Game'>Platform Game Repository</a>
+
+        </p>
+        </td>
+    </tr> <!-- PLATFORM GAME -->
+
+    <tr>
+        <td>
+            <div id="slideshow2" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="trivia/trivia1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="trivia/trivia2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="trivia/trivia3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="trivia/trivia4.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="trivia/trivia5.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow2)"></span>
+                    <span class="dot" onclick="currentSlide(5, slideshow2)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            Trivia Game (Python) <br>Fall 2018
+            <br> <p class = "plain">
+            This project uses unit testing, acceptance testing, refactoring, and other elements of Xtreme Programming.
+            <br><br>
+            This project is a trivia game with pass and play components. There are multiple categories of multiple types of questions,
+            with several questions per category. The questions become harder as the point values increase and the questions are
+            multiple choice and true/false questions. The questions and their answers are pulled from multiple text files.
+
+            <br><br><a href = 'https://github.com/greyhatchet/7P1A-Trivia'>Trivia Game Repository</a>
+
+        </p>
+        </td>
+    </tr> <!-- TRIVIA GAME -->
+
+    <tr>
+        <td>
+            <div id="slideshow7" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="mp/mp1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="mp/mp2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="mp/mp3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="mp/mp4.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1, slideshow7)"></span>
+                    <span class="dot" onclick="currentSlide(2, slideshow7)"></span>
+                    <span class="dot" onclick="currentSlide(3, slideshow7)"></span>
+                    <span class="dot" onclick="currentSlide(4, slideshow7)"></span>
+                </div>
+            </div>
+            <br>
+            <script type="text/javascript" src="proj.js"></script>
+        </td>
+        <td class = "sub">
+            Game Board (Python)<br>Fall 2018
+            <br> <p class = "plain">
+            This project uses pygame to create an immersive gaming experience and engage users.
+            The game is a board game with mini games in which players are trying to score the most points within a limited amount of turns.
+            <br><br>The minigames take the user to play levels of the platform game described above and trivia questions from the trivia game described above.
+            Like those projects, this project uses different Xtreme Programming practices.
+
+            <br><br><a href = 'https://github.com/greyhatchet/7P1AFinal'>Game board Repository</a>
+
+        </p>
+        </td>
+    </tr> <!-- MARIO PARTY  -->
+
+</table>
+
+
+
+<!--style="border:solid 1px red"-->
+
+</body>
+</html>

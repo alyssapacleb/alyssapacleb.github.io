@@ -2,11 +2,72 @@ html {
     font-family: "Times New Roman", Times, serif;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(reg.woff);
+}
+
+table {
+    font-family:myFirstFont;
+    padding-top: 15px;
+    width:25%;
+    text-align:right;
+    border-bottom:1px solid dimgray;
+    font-family:myFirstFont;
+}
+
+.button {
+    font-family:myFirstFont;
+    width:100px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align:center;
+    background-color: white;
+    color:dimgray;
+}
+
+table.a {
+    border: 0 none;
+    font-family:myFirstFont;
+    color:dimgray;
+    font-size: 20px;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color:dimgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+a:active {
+    color:dimgray;
+    text-decoration: underline;
+}
+
 img {
     border-radius: 50%;
     float:left;
     padding:20px;
     margin-left: 30px;
+}
+.header {
+    display:flex;
+    direction: ltr;
+    width:100%;
+    align-items:center;
+    justify-content: flex-end;
+    text-align:right;
+    padding-bottom:10px;
+    padding-right:10px;
 }
 
 
@@ -70,4 +131,15 @@ li {
     display: inline-flex;
 
 
+}
+
+
+.buttoncurrent {
+    font-family:myFirstFont;
+    width:100px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align:center;
+    background-color: #bbbbbb;
+    color: white;
 }

@@ -1,0 +1,174 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(reg.woff);
+}
+
+HTML {
+    display:block;
+    font-family:myFirstFont;
+    width:100%;
+
+}
+
+
+
+a {
+    border: 0 none;
+    font-family:myFirstFont;
+    color:dimgray;
+    font-size: 20px;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color:dimgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+a:active {
+    color:dimgray;
+    text-decoration: underline;
+}
+table {
+    font-family:myFirstFont;
+    padding-top: 15px;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid dimgray;
+}
+.header {
+    display:flex;
+    direction: ltr;
+    width:100%;
+    align-items:center;
+    justify-content: flex-end;
+    text-align:right;
+    padding-bottom:10px;
+    padding-right:10px;
+}
+
+.button {
+    font-family:myFirstFont;
+    width:100px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align:center;
+    background-color: white;
+    color:dimgray;
+}
+
+.TITLE {
+    display:block;
+    font-family: myFirstFont;
+    width:96%;
+    margin-top:0px;
+    padding-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#C7BFE6;
+    color:white;
+    font-size: 50px;
+    height:100px;
+    padding-left:20px;
+    margin-bottom:0px;
+    text-align:left;
+}
+
+p {
+    color:dimgray;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-right:120px;
+}
+
+.sub {
+    font-size:20pt;
+    text-align:left;
+    font-family: myFirstFont;
+    font-weight: bold;
+    color: #C7BFE6;
+    padding-left: 20px;
+    padding-bottom:0px;
+    padding-top: 15px;
+}
+
+.form {
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    border-bottom:0px none;
+    width: 100%;
+}
+
+.all {
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    border-bottom:0px none;
+    width: 100%;
+}
+.all tr {
+    padding:10px;
+}
+tr.spaceUnder>td {
+
+}
+
+.form td {
+    padding:10px;
+}
+
+textarea, input{
+    border:1px solid dimgray;
+}
+
+.pp {
+    text-align:center;
+    border-radius:100%;
+    padding-left:10px;
+}
+
+.pparea {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom:0px none;
+    width: 100%;
+}
+.pparea td {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+button {
+    font-family:myFirstFont;
+    width:100px;
+    font-size:12pt;
+    border-radius:4px;
+    text-align:center;
+    background-color: white;
+    color:dimgray;
+}
+
+.post {
+    border:1px solid dimgray;
+    border-radius:4px;
+    padding:20px;
+}
+.caption {
+    font-size: small;
+}
+
+
+
