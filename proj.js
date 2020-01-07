@@ -26,6 +26,10 @@ var slideshow7 = document.getElementById("slideshow7");
 slideshow7.currentSlideIndex = 1;
 showSlides(slideshow7.currentSlideIndex, slideshow7);
 
+var slideshow8 = document.getElementById("slideshow8");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
 
 
 
