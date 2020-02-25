@@ -1,12 +1,16 @@
 @font-face {
+    font-family: 'head';
+    src: url(Angellia.otf);
+}
+
+@font-face {
     font-family: myFirstFont;
     src: url(reg.woff);
 }
 
-
 HTML {
     display:block;
-    font-family:myFirstFont;
+    /*font-family:myFirstFont;*/
     width:100%;
 
 }
@@ -85,6 +89,7 @@ td {
     padding-right:5px;
     height:50px;
     padding-bottom:10px;
+
 }
 
 .button {
@@ -98,7 +103,7 @@ td {
     cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat976.gif),auto;
 }
 .TITLE {
-    font-family: myFirstFont;
+    font-family: 'head';
     display:block;
     width:100%;
     margin-top:auto;
@@ -113,7 +118,9 @@ td {
     margin-bottom:0px;
     text-align:left;
 }
-
+.in {
+    font-family:myFirstFont;
+}
 .border{
 
     width:300px;
